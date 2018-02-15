@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Psychic-Game</title>
 </head>
 <body>
     
@@ -19,16 +19,33 @@
 
     <script type="text/javascript">
 
+    // Computer choose random choice, give it list of choices, array of options for the computer
+        var options =["a", "b", "c"];
+
 // <!--To read on the keyboard whether user is pressing anything-->
 // <!-- user presses a key and after key released it created an onkeyup event, when that 
 // happens we want function to be performed -->
-   document.onkeyup = function() {
-       var userguess = String.fromCharCode(event.keyCode).
-       toLowerCase();
+        document.onkeyup = function() {
+            var userguess = String.fromCharCode(event.keyCode).
+                toLowerCase();
 
         console.log(userguess);
    }
 
+// create a formula that will make the computer choose from the array at random, random index
+// of array
+// <!-- assigned a variable, computerGuess. I want computerGuess to be 
+// options at what the formula equals index. This is will a number. Math.random
+// will produce a number between 0-1. Then we're going to multiply that by the lenght
+// of the array. Which is always one more than the number of indexes in an array.After 
+// that we apply Math.floor-->
+var computerGuess = options[Math.floor(Math.random()*options.length)];
+
+// <!-- compare choices to see if it was a loss, tie, or a win -->
+
+console.log(computerGuess);
+
+if (userGuess=="a") || userGuess=="b"|| userGuess=="c")
 </script>
 
 </body>
