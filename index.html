@@ -7,7 +7,13 @@
     <title>Psychic-Game</title>
 </head>
 <body>
-    
+
+    <div id="game">
+    <!-- this is what shows up on screen -->
+
+        <p>Press a, b, or c to play.</p>
+    </div>
+
     <!-- // App picks a random letter 
     
     // User is told to guess the correct letter to win 
@@ -62,7 +68,7 @@ if (userguess =="a" || userguess =="b" || userguess == "c") {
     // create way to update counter
     alert("Wins:" +  wins);
 
-   }
+}
 
     if ((userguess=="b") && (computerGuess== "a")) {
        losses++
@@ -72,7 +78,7 @@ if (userguess =="a" || userguess =="b" || userguess == "c") {
     alert("Losses:" + losses);
 }
 
-if ((userguess=="c") && (computerGuess== "b")) {
+    if ((userguess=="c") && (computerGuess== "b")) {
        ties++
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
