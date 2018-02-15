@@ -22,6 +22,8 @@
     // Computer choose random choice, give it list of choices, array of options for the computer
         var options = ["a", "b", "c"];
 
+        // create variables to hold information
+
         var wins = 0;
         var losses = 0;
         var ties = 0;
@@ -53,12 +55,31 @@ console.log(computerGuess);
 
 if (userguess =="a" || userguess =="b" || userguess == "c") {
     // here add comparisons
-   if ((userguess=="a") && (computerGuess== "s")) {
-
+   if ((userguess=="a") && (computerGuess== "c")) {
+       wins++
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
-    alert("Win");
+    // create way to update counter
+    alert("Wins:" +  wins);
+
+   }
+
+    if ((userguess=="b") && (computerGuess== "a")) {
+       losses++
+    //    logics to compare computerGuess to userguess variable based on how the 
+    // game works
+    // create way to update counter
+    alert("Losses:" + losses);
 }
+
+if ((userguess=="c") && (computerGuess== "b")) {
+       ties++
+    //    logics to compare computerGuess to userguess variable based on how the 
+    // game works
+    // create way to update counter
+    alert("Ties:" + losses);
+}
+
 
 } else {
     alert ("choose again");
