@@ -20,7 +20,11 @@
     <script type="text/javascript">
 
     // Computer choose random choice, give it list of choices, array of options for the computer
-        var options =["a", "b", "c"];
+        var options = ["a", "b", "c"];
+
+        var wins = 0;
+        var losses = 0;
+        var ties = 0;
 
 // <!--To read on the keyboard whether user is pressing anything-->
 // <!-- user presses a key and after key released it created an onkeyup event, when that 
@@ -30,7 +34,7 @@
                 toLowerCase();
 
         console.log(userguess);
-   }
+
 
 // create a formula that will make the computer choose from the array at random, random index
 // of array
@@ -39,18 +43,28 @@
 // will produce a number between 0-1. Then we're going to multiply that by the lenght
 // of the array. Which is always one more than the number of indexes in an array.After 
 // that we apply Math.floor-->
-var computerGuess = options[Math.floor(Math.random()*options.length)];
+
+var computerGuess = options[Math.floor(Math.random()*options
+    .length)];
 
 // <!-- compare choices to see if it was a loss, tie, or a win -->
 
 console.log(computerGuess);
 
-if (userguess=="a"|| userguess=="b"|| userguess=="c"); {
-    alert("you guessed correctly!"); }
-else {
-    alert ("try again");
+if (userguess =="a" || userguess =="b" || userguess == "c") {
+    // here add comparisons
+   if ((userguess=="a") && (computerGuess== "s")) {
+
+    //    logics to compare computerGuess to userguess variable based on how the 
+    // game works
+    alert("Win");
 }
 
+} else {
+    alert ("choose again");
+}
+
+}
 </script>
 
 </body>
