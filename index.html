@@ -66,7 +66,7 @@ if (userguess =="a" || userguess =="b" || userguess == "c") {
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
     // create way to update counter
-    alert("Wins:" +  wins);
+    // alert("Wins:" +  wins);
 
 }
 
@@ -75,7 +75,7 @@ if (userguess =="a" || userguess =="b" || userguess == "c") {
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
     // create way to update counter
-    alert("Losses:" + losses);
+    // alert("Losses:" + losses);
 }
 
     if ((userguess=="c") && (computerGuess== "b")) {
@@ -83,14 +83,25 @@ if (userguess =="a" || userguess =="b" || userguess == "c") {
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
     // create way to update counter
-    alert("Ties:" + losses);
+    // alert("Ties:" + ties);
 }
-
 
 } else {
-    alert ("choose again");
+    // alert ("choose again");
 }
+// <!-- we want to have paragraph with instructions, paragraph with wins, losses, and ties
+// insert variables so html will update as user presses key -->
 
+ var html = "<p>Press a,b, or c to get started!</p>" +
+ "<p>wins:" + wins + "</p>" +
+ "<p>losses:" + losses + "</p>" +
+ "<p>ties:" + ties + "</p>";
+
+// <!-- every time user presses a key, computer should determine win or loss after comparing to randomized computerGuess
+// increment variables as needed, then update variable HTML with correct wins, losses, ties as variables update
+// target div game and replace all HMTL inside with new variable created -->
+
+document.querySelector("#game").innerHTML = html
 }
 </script>
 
