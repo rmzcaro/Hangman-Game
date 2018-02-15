@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- // App picks a random letter 
+    
+    // User is told to guess the correct letter to win 
+    // User selects letter and as this happens, the guesses / win /guesses left change accordingly 
+    // If correct guess, user wins (play a song), add a point to wins
+    // If incorrect guess, guesses shows letter guesses until all guess tries are exhausted
+    // If all guesses are exhausted, a point pops up on user losses
+    // Once user wins or loses, game starts over without a web page refresh -->
+
+    <script type="text/javascript">
+
+// <!--To read on the keyboard whether user is pressing anything-->
+// <!-- user presses a key and after key released it created an onkeyup event, when that 
+// happens we want function to be performed -->
+   document.onkeyup = function() {
+       var userguess = String.fromCharCode(event.keyCode).
+       toLowerCase();
+
+        console.log(userguess);
+   }
+
+</script>
+
+</body>
+</html>
