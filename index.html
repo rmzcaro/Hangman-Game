@@ -26,7 +26,7 @@
     <script type="text/javascript">
 
     // Computer choose random choice, give it list of choices, array of options for the computer
-        var options = ["a", "n", "n"];
+        var options = ["a", "n", "t"];
 
         // create variables to hold information
 
@@ -46,8 +46,8 @@
 
 // create a formula that will make the computer choose from the array at random, random index
 // of array
-// <!-- assigned a variable, computerGuess. I want computerGuess to be 
-// options at what the formula equals index. This is will a number. Math.random
+// assigned a variable, computerGuess. I want computerGuess to be 
+// options at what the formula equals index. This is a number. Math.random
 // will produce a number between 0-1. Then we're going to multiply that by the lenght
 // of the array. Which is always one more than the number of indexes in an array.After 
 // that we apply Math.floor-->
@@ -75,7 +75,7 @@ if (userguess =="a" || userguess =="n" || userguess == "t") {
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
     // create way to update counter
-    // alert("Losses:" + losses);
+    // alert("Wins:" +  wins);
 }
 
     if ((userguess=="t") && (computerGuess== "t")) {
@@ -83,11 +83,17 @@ if (userguess =="a" || userguess =="n" || userguess == "t") {
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
     // create way to update counter
-    // alert("Ties:" + ties);
+    // alert("Wins:" +  wins);
 }
 
 } else {
+
+    //if user guesses any other letter besides a,n,t then loss//
+
+    if ((userguess=="b,c,d,e")  {
+       loss++
     // alert ("choose again");
+
 }
 // <!-- we want to have paragraph with instructions, paragraph with wins, losses, and ties
 // insert variables so html will update as user presses key -->
@@ -107,9 +113,3 @@ document.querySelector("#game").innerHTML = html
 
 </body>
 </html>
-
-<!-- var wordOfTheDay = "antidis......"
-    decide what letter we're lookign for 
-    iterate through each character looking for the letter a
-    IS (read if) this letter equal to the letter I'm looking for?> 
-    increase count of variable letter. google JS accept keyboard input -->
