@@ -26,7 +26,7 @@
     <script type="text/javascript">
 
     // Computer choose random choice, give it list of choices, array of options for the computer
-        var options = ["a", "b", "c"];
+        var options = ["a", "n", "n"];
 
         // create variables to hold information
 
@@ -41,7 +41,7 @@
             var userguess = String.fromCharCode(event.keyCode).
                 toLowerCase();
 
-        console.log(userguess);
+        // console.log(userguess);
 
 
 // create a formula that will make the computer choose from the array at random, random index
@@ -57,11 +57,11 @@ var computerGuess = options[Math.floor(Math.random()*options
 
 // <!-- compare choices to see if it was a loss, tie, or a win -->
 
-console.log(computerGuess);
+// console.log(computerGuess);
 
-if (userguess =="a" || userguess =="b" || userguess == "c") {
+if (userguess =="a" || userguess =="n" || userguess == "t") {
     // here add comparisons
-   if ((userguess=="a") && (computerGuess== "c")) {
+   if ((userguess=="a") && (computerGuess== "a")) {
        wins++
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
@@ -70,7 +70,7 @@ if (userguess =="a" || userguess =="b" || userguess == "c") {
 
 }
 
-    if ((userguess=="b") && (computerGuess== "a")) {
+    if ((userguess=="n") && (computerGuess== "n")) {
        losses++
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
@@ -78,7 +78,7 @@ if (userguess =="a" || userguess =="b" || userguess == "c") {
     // alert("Losses:" + losses);
 }
 
-    if ((userguess=="c") && (computerGuess== "b")) {
+    if ((userguess=="t") && (computerGuess== "t")) {
        ties++
     //    logics to compare computerGuess to userguess variable based on how the 
     // game works
@@ -107,3 +107,9 @@ document.querySelector("#game").innerHTML = html
 
 </body>
 </html>
+
+var wordOfTheDay = "antidis......"
+<!-- decide what letter we're lookign for 
+iterate through each character looking for the letter
+IS (read if) this letter equal to the letter I'm looking for> 
+increase count of variable letter, google JS accept keyboard input -->
